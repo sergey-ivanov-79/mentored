@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./assets/dependencies/wow/css/animate.css" type="text/css"> -->
+    <link rel="stylesheet" href="./assets/dependencies/swiper/css/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+
+  <body>
+    <div class="bg-black">
+      <header id="header" class="header">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+          <div class="container">
+            <div class="wrapper-header">
+              <a class="navbar-brand" href="#">
+                <img class="logo-img" src="./assets/img/svg/logo.svg" alt="logo">
+              </a>
+              <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation" wfd-invisible="true"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <img src="./assets/img/svg/menu.svg" alt="menu">
+              </button>
+
+              <div class="expand-nav offcanvas offcanvas_menu offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <button class="navbar-toggler p-0 border-0 close-btn" type="button" aria-label="Toggle navigation" wfd-invisible="true"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                  <img src="./assets/img/svg/close.svg" alt="menu">
+                </button>
+                <div class="d-lg-flex align-items-center">
+                  <ul class="navbar-nav ms-auto navbar-nav-dop">
+                    <li class="nav-item nav-item-dop dropdown">
+                      <div class="nav-link dropdown-toggle dropdown-toggle-dop" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shows
+                      </div>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Mark Bouris SoloPodcast</a></li>
+                        <li><a class="dropdown-item" href="#">Straight Talk</a></li>
+                        <li><a class="dropdown-item" href="#">Project 100</a></li>
+                        <li><a class="dropdown-item" href="#">Property Insights</a></li>
+                        <li><a class="dropdown-item" href="#">Economic Update with Kouky</a></li>
+                        <li><a class="dropdown-item" href="#">The Mentor</a></li>
+                        <li><a class="dropdown-item" href="#">Survive & Thrive</a></li>
+                        <li><a class="dropdown-item" href="#">Going Public</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item nav-item-dop">
+                      <a class="nav-link" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item nav-item-dop">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                  <form class="form_header text-center ms-lg-2 text-lg-left d-lg-flex gap-lg-2 align-items-center">
+                    <button class="btn btn-gradient mt-3 mt-lg-0 btn_big" type="button"><span>Log in</span></button>
+                    <button class="btn btn-gradient mt-3 mt-lg-0 btn_big" type="button"><span>Join Mentored+</span></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>  
+      </header>
+
+      <button class="scroll-btn" id="scrollBtn">
+        <span class="scrollDown" id="scrollDown">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M8 12L12 16M12 16L16 12M12 16V8M7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        SCROLL
+        <span class="scrollUp" id="scrollUp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M8 12L12 8M12 8L16 12M12 8V16M7.8 3H16.2C17.8802 3 18.7202 3 19.362 3.32698C19.9265 3.6146 20.3854 4.07354 20.673 4.63803C21 5.27976 21 6.11984 21 7.8V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V7.8C3 6.11984 3 5.27976 3.32698 4.63803C3.6146 4.07354 4.07354 3.6146 4.63803 3.32698C5.27976 3 6.11984 3 7.8 3Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </button>
+
+      <section class="section section_top section_top_rgba">
+        <div class="container">
+          <div class="position-relative z-3">
+            <div class="d-flex flex-column gap-3">
+              <div class="text-md text-white">Discover more about us</div>
+              <div class="extratitle lh-1 mb-3">
+                Mentored believes <br>
+                <span class="head-leaner head-leaner_1">Australian SME owners</span> 
+                are our unsung heroes.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_portfolio">
+        <div class="wrapper_all_fotos">
+          <div class="swiper-container portfolio-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide foto_block">
+                <div class="inner_foto_block">
+                  <img class="logo-min logo-min-dop" src="./assets/img/svg/logo.svg" alt="logo">
+                  <img class="img-fluid foto-img" src="./assets/img/png/fotos/foto-1.png" alt="">
+                  <div class="name-project"><div class="text-footer text-white">Solo Podcast (Q&A)</div></div>
+                </div>
+              </div>
+              <div class="swiper-slide foto_block">
+                <div class="inner_foto_block">
+                  <img class="logo-min logo-min-dop" src="./assets/img/svg/logo.svg" alt="logo">
+                  <img class="img-fluid foto-img" src="./assets/img/png/fotos/foto-2.png" alt="">
+                  <div class="name-project"><div class="text-footer text-white">Straight Talk</div></div>
+                </div>
+              </div>
+              <div class="swiper-slide foto_block">
+                <div class="inner_foto_block">
+                  <img class="logo-min logo-min-dop" src="./assets/img/svg/logo.svg" alt="logo">
+                  <img class="img-fluid foto-img" src="./assets/img/png/fotos/foto-3.png" alt="">
+                  <div class="name-project"><div class="text-footer text-white">Project 100</div></div>
+                </div>
+              </div>
+              <div class="swiper-slide foto_block">
+                <div class="inner_foto_block">
+                  <img class="logo-min logo-min-dop" src="./assets/img/svg/logo.svg" alt="logo">
+                  <img class="img-fluid foto-img" src="./assets/img/png/fotos/foto-4.png" alt="">
+                  <div class="name-project"><div class="text-footer text-white">Property Insights</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section section_profile">
+        <div class="wrapper_profile_block">
+          <div class="profile_block_img" style="background-image: url('./assets/img/png/markbouris-big.png');">
+            <div class="profile_text ms-auto">
+              <h3 class="h3 text-white text-uppercase lh-1">mark bouris</h3>
+              <div class="text color-gray-5">
+                Founder and Executive Chairman of Yellow Brick Road  •  Executive Chairman of TZ Limited • The Mentor Founder
+              </div>
+            </div>
+          </div>
+          <div class="profile_block_content">
+            <div class="text-big lh-1 fw-200 text-white">
+              <div class="mb-2">Mark Bouris founded Mentored in 2017 after hosting the popular TV series, The Mentor.</div>
+              Mark organises knowledge from 40+ years in business (including personal coaching from Kerry Packer) into a digital Playbook for Success. In short, bringing the very best of business thought leadership to rank-and-file Australians.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_bigbg">
+        <div class="container">
+          <div class="text-start text-md-end">
+            <div class="name_big text-white">MARK BOURIS</div>
+            <div class="text-sm text-white fw-300 mb-4">
+              Founder and Executive Chairman of Yellow Brick Road  •  Executive Chairman of TZ Limited • The Mentor Founder
+            </div>
+          </div>
+          <div class="container_sm_dop ms-auto">
+            <div class="text-dop color-gray-5">
+              High-profile entrepreneur and academic Mark Bouris founded Mentored in 2017 after hosting the popular TV series, The Mentor. Mark organises knowledge from 40+ years in business (including personal coaching from Kerry Packer) into a digital Playbook for Success. In short, bringing the very best of business thought leadership to rank-and-file Australians.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_guests">
+        <div class="guests_title_block">
+          <div class="container">
+            <div class="text-center">
+              <h1 class="h1 text-black text-uppercase">
+                Mentored Interviews Fantastic Guests
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper_guests_content">
+          <div class="guests_content">
+            <div class="swiper-container swiper-container-guests">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide grid-item">
+                  <div class="grid-item-guest">
+                    <img class="bg-img bg-img-guest" src="./assets/img/jpg/quests/img-1.jpeg" alt="">
+                    <div class=""><img class="logo-guest" src="./assets/img/svg/logo.svg" alt="logo"></div>
+                    <div class="guest-desc">
+                      <h5 class="h5 fw-900 text-white lh-1 text-uppercase mb-1">LARRY ROBERTSON</h5>
+                      <div class="text-footer text-white">Founder Yellow Brick RoadChairman of TZ Limited</div>
+                      <div class="text-description">
+                        Mentored has been a game-changer for my business. My mentor's guidance and support have helped me overcome challenges, develop new strategies
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid-item">
+                  <div class="grid-item-guest">
+                    <img class="bg-img bg-img-guest" src="./assets/img/jpg/quests/img-2.jpeg" alt="">
+                    <div class=""><img class="logo-guest" src="./assets/img/svg/logo.svg" alt="logo"></div>
+                    <div class="guest-desc">
+                      <h5 class="h5 fw-900 text-white lh-1 text-uppercase mb-1"></h5>
+                      <div class="text-footer text-white">Founder Yellow Brick RoadChairman of TZ Limited</div>
+                      <div class="text-description">
+                        Mentored has been a game-changer for my business. My mentor's guidance and support have helped me overcome.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid-item">
+                  <div class="grid-item-guest">
+                    <img class="bg-img bg-img-guest" src="./assets/img/jpg/quests/img-3.jpeg" alt="">
+                    <div class=""><img class="logo-guest" src="./assets/img/svg/logo.svg" alt="logo"></div>
+                    <div class="guest-desc">
+                      <h5 class="h5 fw-900 text-white lh-1 text-uppercase mb-1">LARRY ROBERTSON</h5>
+                      <div class="text-footer text-white">Founder Yellow Brick RoadChairman of TZ Limited</div>
+                      <div class="text-description">
+                        Mentored has been a game-changer for my business. My mentor's guidance and support have helped me overcome.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid-item">
+                  <div class="grid-item-guest">
+                    <img class="bg-img bg-img-guest" src="./assets/img/jpg/quests/img-4.jpeg" alt="">
+                    <div class=""><img class="logo-guest" src="./assets/img/svg/logo.svg" alt="logo"></div>
+                    <div class="guest-desc">
+                      <h5 class="h5 fw-900 text-white lh-1 text-uppercase mb-1">LARRY ROBERTSON</h5>
+                      <div class="text-footer text-white">Founder Yellow Brick RoadChairman of TZ Limited</div>
+                      <div class="text-description">
+                        Mentored has been a game-changer for my business. My mentor's guidance and support have helped me overcome.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid-item">
+                  <div class="grid-item-guest">
+                    <img class="bg-img bg-img-guest" src="./assets/img/jpg/quests/img-5.jpeg" alt="">
+                    <div class=""><img class="logo-guest" src="./assets/img/svg/logo.svg" alt="logo"></div>
+                    <div class="guest-desc">
+                      <h5 class="h5 fw-900 text-white lh-1 text-uppercase mb-1">LARRY ROBERTSON</h5>
+                      <div class="text-footer text-white">Founder Yellow Brick RoadChairman of TZ Limited</div>
+                      <div class="text-description">
+                        Mentored has been a game-changer for my business. My mentor's guidance and support have helped me overcome.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid-item">
+                  <div class="grid-item-guest">
+                    <img class="bg-img bg-img-guest" src="./assets/img/jpg/quests/img-6.jpeg" alt="">
+                    <div class=""><img class="logo-guest" src="./assets/img/svg/logo.svg" alt="logo"></div>
+                    <div class="guest-desc">
+                      <h5 class="h5 fw-900 text-white lh-1 text-uppercase mb-1">LARRY ROBERTSON</h5>
+                      <div class="text-footer text-white">Founder Yellow Brick RoadChairman of TZ Limited</div>
+                      <div class="text-description">
+                        Mentored has been a game-changer for my business. My mentor's guidance and support have helped me overcome.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid-item">
+                  <div class="grid-item-guest">
+                    <img class="bg-img bg-img-guest" src="./assets/img/jpg/quests/img-1.jpeg" alt="">
+                    <div class=""><img class="logo-guest" src="./assets/img/svg/logo.svg" alt="logo"></div>
+                    <div class="guest-desc">
+                      <h5 class="h5 fw-900 text-white lh-1 text-uppercase mb-1">LARRY ROBERTSON</h5>
+                      <div class="text-footer text-white">Founder Yellow Brick RoadChairman of TZ Limited</div>
+                      <div class="text-description">
+                        Mentored has been a game-changer for my business. My mentor's guidance and support have helped me overcome.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid-item">
+                  <div class="grid-item-guest">
+                    <img class="bg-img bg-img-guest" src="./assets/img/jpg/quests/img-2.jpeg" alt="">
+                    <div class=""><img class="logo-guest" src="./assets/img/svg/logo.svg" alt="logo"></div>
+                    <div class="guest-desc">
+                      <h5 class="h5 fw-900 text-white lh-1 text-uppercase mb-1">LARRY ROBERTSON</h5>
+                      <div class="text-footer text-white">Founder Yellow Brick RoadChairman of TZ Limited</div>
+                      <div class="text-description">
+                        Mentored has been a game-changer for my business. My mentor's guidance and support have helped me overcome.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid-item">
+                  <div class="grid-item-guest">
+                    <img class="bg-img bg-img-guest" src="./assets/img/jpg/quests/img-3.jpeg" alt="">
+                    <div class=""><img class="logo-guest" src="./assets/img/svg/logo.svg" alt="logo"></div>
+                    <div class="guest-desc">
+                      <h5 class="h5 fw-900 text-white lh-1 text-uppercase mb-1">LARRY ROBERTSON</h5>
+                      <div class="text-footer text-white">Founder Yellow Brick RoadChairman of TZ Limited</div>
+                      <div class="text-description">
+                        Mentored has been a game-changer for my business. My mentor's guidance and support have helped me overcome.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid-item">
+                  <div class="grid-item-guest">
+                    <img class="bg-img bg-img-guest" src="./assets/img/jpg/quests/img-4.jpeg" alt="">
+                    <div class=""><img class="logo-guest" src="./assets/img/svg/logo.svg" alt="logo"></div>
+                    <div class="guest-desc">
+                      <h5 class="h5 fw-900 text-white lh-1 text-uppercase mb-1">LARRY ROBERTSON</h5>
+                      <div class="text-footer text-white">Founder Yellow Brick RoadChairman of TZ Limited</div>
+                      <div class="text-description">
+                        Mentored has been a game-changer for my business. My mentor's guidance and support have helped me overcome.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_reviews">
+        <div class="container">
+          <div class="swiper-container swiper-container-reviews">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="text-center">
+                  <div class="text-reviews fw-300 text-black mb-3">
+                    "Mentored has been a game-changer for my business. My mentor's guidance and support have helped me overcome challenges, develop new strategies, and achieve significant growth. I highly recommend Mentored to any entrepreneur looking to take their business to the next level."
+                  </div>
+                  <div class="text-md text-black fw-700">
+                    Sarah Jones, Marketing Manager
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="text-center">
+                  <div class="text-reviews fw-300 text-black mb-4">
+                    "Mentored has been a game-changer for my business. My mentor's guidance and support have helped me overcome challenges, develop new strategies, and achieve significant growth. I highly recommend Mentored to any entrepreneur looking to take their business to the next level."
+                  </div>
+                  <div class="text-md text-black fw-700">
+                    Sarah Jones, Marketing Manager
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="text-center">
+                  <div class="text-reviews fw-300 text-black mb-4">
+                    "Mentored has been a game-changer for my business. My mentor's guidance and support have helped me overcome challenges, develop new strategies, and achieve significant growth. I highly recommend Mentored to any entrepreneur looking to take their business to the next level."
+                  </div>
+                  <div class="text-md text-black fw-700">
+                    Sarah Jones, Marketing Manager
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+    
+      <footer id="footer" class="footer">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col-lg-8">
+              <div class="row">
+                <div class="col-8 col-lg-12">
+                  <h1 class="h1 text-white text-uppercase lh-1 mb-3">
+                    Ready to take your <br class="d-none d-lg-block">business to <br class="d-none d-lg-block">
+                    <span class="head-leaner head-leaner_1">the next level?</span>
+                  </h1>
+                  <a href="#" class="btn btn-gradient text-uppercase btn-big">
+                    <span>Join Mentored+</span>
+                  </a>
+                </div>
+                <div class="col-4 d-block d-lg-none">
+                  <div class="footer-img-1 footer-img-group footer-img-group-1">
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-1.png" alt="">
+                      <div class="footer-img-content position-relative z-1">
+                        <div class="text-sm text-white">Mark Bouris</div>
+                        <div class="text text-white">Founder of Mentored</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-3.png" alt="">
+                      <div class="footer-img-content position-relative z-1">
+                        <div class="text-sm text-white">Harry Triguboff</div>
+                        <div class="text text-white">Owner Meriton Suite</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-5.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer_content">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <div class="ltd_block">
+                      <div class="text-md color-gray-4 mb-2">
+                        The mentor platform pty ltd.
+                      </div>
+                      <div class="text-footer color-gray-4">
+                        Shop 1, 304-310 Victoria St <br> Darlinghurst NSW, 2010
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="title-footer fw=600 color-black-600">Our Shows</div>
+                        <ul>
+                          <li><a href="#" class="footer_link">The Mentor (Show)</a></li>
+                          <li><a href="#" class="footer_link">Straight Talk (Show)</a></li>
+                          <li><a href="#" class="footer_link">Survive and Thrive</a></li>
+                          <li><a href="#" class="footer_link">Property Insights</a></li>
+                          <li><a href="#" class="footer_link">Economic Update with Kouky</a></li>
+                          <li><a href="#" class="footer_link">Solo Q&A Podcast</a></li>
+                          <li><a href="#" class="footer_link">Project 100</a></li>
+                          <li><a href="#" class="footer_link">Going Public</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-6">
+                        <div class="title-footer fw=600 color-black-600">About Company</div>
+                        <ul>
+                          <li><a href="#" class="footer_link">About Mentored</a></li>
+                          <li><a href="#" class="footer_link">Mentored Plus</a></li>
+                          <li><a href="#" class="footer_link">Events</a></li>
+                          <li><a href="#" class="footer_link">Partners</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="wrapper_footer_image">
+                <div class="d-flex gap-2 align-items-center">
+                  <div class="footer-img-group footer-img-group-1">
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-1.png" alt="">
+                      <div class="footer-img-content position-relative z-1">
+                        <div class="text-sm text-white">Mark Bouris</div>
+                        <div class="text text-white">Founder of Mentored</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-3.png" alt="">
+                      <div class="footer-img-content position-relative z-1">
+                        <div class="text-sm text-white">Harry Triguboff</div>
+                        <div class="text text-white">Owner Meriton Suite</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-5.png" alt="">
+                    </a>
+                  </div>
+                  <div class="footer-img-group footer-img-group-2 d-none d-lg-flex">
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-2.png" alt="">
+                      <div class="footer-img-content position-relative z-1">
+                        <div class="text-sm text-white">DR. Aengus Tran</div>
+                        <div class="text text-white">CEO Harrison Ai</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-4.png" alt="">
+                      <div class="footer-img-content position-relative z-1">
+                        <div class="text-sm text-white">Ray Hadley</div>
+                        <div class="text text-white">Retired radio legend </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="wrapper_logo_footer">
+              <img class="logo_footer img-fluid" src="./assets/img/svg/logo.svg" alt="">
+            </div>
+            <div class="d-flex align-items-start align-items-md-center flex-column flex-md-row justify-content-between gap-3">
+              <div class="text-dop color-gray-4 fw-300">A<span class="text-md-lowercase">LL RIGHTS RESERVED - 2022  THE MENTORed PLATFORM PTY LTD</span></div>
+              <div class="social_icons">
+                <a href="#" class="social_icon">
+                  <img class="img-fluid" src="./assets/img/svg/social/facebook.svg" alt="facebook">
+                </a>
+                <a href="#" class="social_icon">
+                  <img class="img-fluid" src="./assets/img/svg/social/instagram.svg" alt="instagram">
+                </a>
+                <a href="#" class="social_icon">
+                  <img class="img-fluid" src="./assets/img/svg/social/linkedin.svg" alt="linkedin">
+                </a>
+                <a href="#" class="social_icon">
+                  <img class="img-fluid" src="./assets/img/svg/social/youtube.svg" alt="youtube">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- <script src="./assets/dependencies/wow/js/wow.min.js"></script> -->
+    <script src="./assets/dependencies/swiper/js/swiper.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/slider.js"></script>
+
+  </body>
+</html>

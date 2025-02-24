@@ -1,0 +1,22 @@
+.close-btn {
+  text-align: right;
+  transition: none !important;
+  padding: 15px 15px 0px !important;
+  // position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.offcanvas_menu {
+  background: var(--RED-MEN-700, #D32F2F);
+  &.offcanvas-end {
+    width: auto;
+    @media (max-width: 991.98px) {
+      width: 0px;
+    }
+    &.show {
+      overflow: auto;
+      width: 100%;
+      max-width: 415px;
+    }
+  }
+}

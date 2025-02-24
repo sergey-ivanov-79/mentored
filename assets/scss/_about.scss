@@ -1,0 +1,153 @@
+.wrapper_all_fotos {
+  display: flex;
+  overflow: hidden;
+  gap: 48px;
+  @media (max-width: 991.98px) {
+    gap: 30px;
+  }
+  @media (max-width: 767.98px) {
+    gap: 20px;
+  }
+  .foto_block {
+    @media (max-width: 767.98px) {
+      width: 50%;
+    }
+  }
+}
+.inner_foto_block {
+  position: relative;
+}
+.foto-img {
+  object-fit: cover;
+}
+.name-project {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.section_portfolio {
+  padding-bottom: 120px;
+  @media (max-width: 991.98px) {
+    padding-bottom: 100px;
+  }
+}
+.section_profile {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  overflow: hidden;
+  @media (max-width: 991.98px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  &_dop {
+    padding-top: 60px;
+  }
+}
+.wrapper_profile_block {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-right: 30px;
+  @media (max-width: 1200px) {
+    padding-left: 30px;
+    flex-direction: column;
+    order: 1;
+  }
+}
+.profile_block_img {
+  min-width: 590px;
+  width: 590px;
+  height: 614px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-right: 70px;
+  margin-left: -60px;
+  position: relative;
+  &:before {
+    content: '';
+    background: linear-gradient(180deg, rgba(115, 115, 115, 0.00) 63.34%, rgba(0, 0, 0, 0.4) 74.5%, #000 100%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  @media (max-width: 1200px) {
+    min-width: 390px;
+    width: 390px;
+    height: 440px;
+    order: 2;
+    margin: 20px auto 0px;
+  }
+}
+.profile_text {
+  max-width: 250px;
+  position: relative;
+}
+.section_bigbg {
+  padding-top: 280px;
+  padding-bottom: 280px;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: 991.98px) {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  @media (max-width: 767.98px) {
+    padding-bottom: 0px;
+  }
+  &:after {
+    content: "";
+    width: 807px;
+    height: 838px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/png/markbouris-big.png');
+    position: absolute;
+    left: -15%;
+    bottom: 0;
+    @media (min-width: 1560px) {
+      left: -10%;
+    }
+    @media (min-width: 1800px) {
+      left: -3%;
+    }
+    @media (max-width: 1200px) {
+      width: 607px;
+      height: 638px;
+    }
+    @media (max-width: 991.98px) {
+      position: static;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 36px;
+      margin-bottom: -90px;
+    }
+    @media (max-width: 767.98px) {
+      width: 332px;
+      height: 346px;
+    }
+  }
+  .text-sm {
+    @media (max-width: 1200px) {
+      padding-left: 22%;
+    }
+    @media (max-width: 767.98px) {
+      padding-left: 0%;
+    }
+  }
+  .container_sm_dop {
+    @media (max-width: 1200px) {
+      padding-left: 16%;
+    }
+    @media (max-width: 767.98px) {
+      padding-left: 0%;
+    }
+  }
+}

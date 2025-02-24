@@ -1,0 +1,478 @@
+body,html {
+  font-family: "Bricolage Grotesque", serif;
+  color: #434343;
+  font-size: 18px;
+  line-height: 166.667%;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+tbody::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+ // Track 
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+}
+// Handle 
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background: #434343;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #434343;
+}
+.container {
+  @media (min-width: 1280px) and (max-width: 1399px) {
+    max-width: 1200px;
+  }
+}
+.episod-item-2 {
+  max-width: 150px;
+}
+.episod-item-3 {
+  max-width: 334px;
+}
+.episod-item-4 {
+  max-width: 245px;
+}
+.container_episod {
+  max-width: 334px;
+  &_dop {
+    max-width: 393px;
+  }
+}
+.container-extra-min {
+  max-width: 300px;
+}
+.container-min {
+  max-width: 480px;
+}
+.container-min-dop {
+  max-width: 520px;
+}
+.container_sm {
+  @media (min-width: 1280px) {
+    max-width: 840px;
+  }
+  &_dop {
+    @media (min-width: 992px) {
+      max-width: 730px;
+    }
+  }
+}
+.container_md {
+  @media (min-width: 1280px) {
+    max-width: 920px;
+  }
+  margin-left: auto;
+  margin-right: auto;
+}
+.container_md_dop {
+  @media (min-width: 1100px) {
+    max-width: 956px;
+  }
+}
+.container_big {
+  @media (min-width: 1560px) {
+    max-width: 1500px;
+  }
+}
+.container_extra_min {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hidden {
+  display: none;
+}
+.invisible {
+  display: none;
+}
+.name_big {
+  font-family: "Big Shoulders Text";
+  font-size: 200px;
+  font-weight: 900;
+  line-height: 0.9;
+  &_dop {
+    font-size: 160px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 130px;
+  }
+  @media (max-width: 991.98px) {
+    font-size: 110px;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 64px;
+  }
+}
+.extratitle {
+  color: var(--WHITE, #FFF);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Big Shoulders Text";
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  &_dop {
+    font-size: 150px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 110px;
+  }
+  @media (max-width: 991.98px) {
+    font-size: 90px;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 80px;
+  }
+  @media (max-width: 574.98px) {
+    font-size: 74px;
+  }
+  @media (max-width: 414px) {
+    font-size: 64px;
+  }
+}
+.title {
+  font-family: "Big Shoulders Text";
+  font-size: 96px;
+  line-height: 93.75%;
+  &-dop {
+    font-size: 85px;
+  }
+  &-min {
+    font-size: 82px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 76px;
+  }
+  @media (max-width: 991.98px) {
+    font-size: 68px;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 40px;
+  }
+}
+.extratitle span {
+  color: #F44336;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Big Shoulders Text";
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.h1 {
+  font-size: 64px;
+  @media (max-width: 1200px) {
+    font-size: 56px;
+  }
+  @media (max-width: 991.98px) {
+    font-size: 48px;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 40px;
+  }
+}
+.h2 {
+  font-size: 52px;
+  &-dop {
+    font-size: 50px;
+  }
+  &-min {
+    font-size: 48px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 44px;
+  }
+  @media (max-width: 991.98px) {
+    font-size: 38px;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 36px;
+  }
+}
+.h3 {
+  font-size: 40px;
+  @media (max-width: 1200px) {
+    font-size: 38px;
+  }
+  @media (max-width: 991.98px) {
+    font-size: 34px;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 28px;
+  }
+}
+.h4 {
+  font-size: 36px;
+  @media (max-width: 1200px) {
+    font-size: 32px;
+  }
+  @media (max-width: 991.98px) {
+    font-size: 30px;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 26px;
+  }
+}
+.h5 {
+  font-size: 32px;
+  line-height: 145.833%;
+  @media (max-width: 1200px) {
+    font-size: 28px;
+  }
+  @media (max-width: 991.98px) {
+    font-size: 26px;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 24px;
+  }
+}
+.h6 {
+  font-size: 28px;
+  line-height: 100%;
+  &-dop {
+    font-size: 24px;
+    line-height: 125%;
+  }
+}
+.head-leaner {
+  &_1 {
+    display: inline-block;
+    background: var(--RED-GRAD-1, linear-gradient(90deg, #F15B47 0%, #F9A321 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &_2 {
+    display: inline-block;
+    background: var(--RED-GRAD-2, radial-gradient(141.31% 243.37% at 87.11% -71.74%, #F57E35 0%, #F44336 100%));
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.text-md-lowercase {
+  @media (min-width: 768px) {
+    text-transform: lowercase;
+  }
+}
+.text-min {
+  font-size: 13px;
+  line-height: 138.462% ;
+}
+.text {
+  font-size: 14px;
+  line-height: 142.857%;
+}
+.text-dop {
+  font-size: 15px;
+  line-height: 166.667%;
+}
+.text-footer {
+  font-size: 16px;
+  line-height: 1.5;
+  &-dop {
+    letter-spacing: -0.16px;
+  }
+}
+.text-sm {
+  font-size: 18px;
+  line-height: 166.667%;
+  @media (max-width: 992px) {
+    font-size: 16px;
+  }
+}
+.text-md {
+  font-size: 20px;
+  line-height: 1.5;
+  @media (max-width: 1200px) {
+    font-size: 18px;
+  }
+  @media (max-width: 991.98px) {
+    font-size: 14px;
+  }
+}
+.text-xl {
+  font-size: 24px;
+  line-height: 145.833%;
+  &-dop {
+    font-size: 22px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 22px;
+  }
+  @media (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 18px;
+  }
+}
+.text-22 {
+  font-size: 22px;
+  line-height: 136.364%;
+}
+.text-30 {
+  font-size: 30px;
+  line-height: 133.333%;
+  @media (max-width: 991.98px) {
+    font-size: 24px;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 20px;
+  }
+}
+.text-reviews {
+  font-size: 32px;
+  line-height: 125%;
+  @media (max-width: 991.98px) {
+    font-size: 24px;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 20px;
+  }
+}
+.text-xxl {
+  font-size: 40px;
+  &-dop {
+    font-size: 36px;
+    line-height: 138.889%;
+    @media (max-width: 767.98px) {
+      font-size: 24px;
+    }
+  }
+}
+.text-big {
+  font-size: 48px;
+  @media (max-width: 1200px) {
+    font-size: 38px;
+  }
+  @media (max-width: 991.98px) {
+    font-size: 30px;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 24px;
+  }
+  @media (max-width: 575.98px) {
+    font-size: 20px;
+  }
+}
+.box-shadow-none {
+  box-shadow: none !important;
+}
+.white-space-nowrap {
+  white-space: nowrap;
+}
+.bg-black-50 {
+  background: var(--BLACK-50, #F5F5F5);
+}
+a {
+  color: #FF781E;
+  transition: all 0.3s;
+  text-decoration: underline;
+  &:hover {
+    color: #f79656;
+  }
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.ul_disc {
+  padding-left: 25px;
+  margin-bottom: 0;
+  li {
+    list-style: disc;
+  }
+}
+.row-min {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.col-min {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.color-orange {
+  color: #F44336 !important;
+}
+.color-red {
+  color: #D32F2F !important;
+}
+.color-gray {
+  color: var(--text-icons-dark-base-second, #979AA0);
+}
+.color-gray-2 {
+  color: #C4C4C4 !important;
+}
+.color-gray-3 {
+  color: #7B7B7B !important;
+}
+.color-gray-4 {
+  color: #D9D9D9 !important;
+}
+.color-gray-5 {
+  color: #9D9D9D !important;
+}
+.color-black-600 {
+  color: var(--BLACK-600, #555);
+}
+.color-black-700 {
+  color: var(--BLACK-700, #434343) !important;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-36 {
+  margin-bottom: 36px;
+}
+.fw-200 {
+  font-weight: 200 !important;
+}
+.fw-300 {
+  font-weight: 300 !important;
+}
+.fw-400 {
+  font-weight: 400 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
+.fw-700 {
+  font-weight: 700 !important;
+}
+.fw-800 {
+  font-weight: 800 !important;
+}
+.fw-900 {
+  font-weight: 900 !important;
+}
+.lh-1 {
+  line-height: 1 !important;
+}
+.lh-15 {
+  line-height: 1.5 !important;
+}
+.ff-BST {
+  font-family: "Big Shoulders Text", serif !important;
+}
+.ff-Bg {
+  font-family: "Bricolage Grotesque", serif;
+}

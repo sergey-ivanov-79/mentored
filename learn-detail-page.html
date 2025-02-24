@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./assets/dependencies/wow/css/animate.css" type="text/css"> -->
+    <link rel="stylesheet" href="./assets/dependencies/swiper/css/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+
+  <body>
+    <div class="bg-black">
+      <header id="header" class="header header-in">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+          <div class="container flex-column">
+            <div class="wrapper-header">
+              <a class="navbar-brand" href="#">
+                <img class="logo-img" src="./assets/img/svg/LOGO-SVG.svg" alt="logo">
+              </a>
+              <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation" wfd-invisible="true"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <img src="./assets/img/svg/menu.svg" alt="menu">
+              </button>
+
+              <div class="expand-nav offcanvas offcanvas_menu offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <button class="navbar-toggler p-0 border-0 close-btn" type="button" aria-label="Toggle navigation" wfd-invisible="true"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                  <img src="./assets/img/svg/close.svg" alt="menu">
+                </button>
+                <div class="d-lg-flex align-items-center">
+                  <ul class="navbar-nav ms-auto me-auto navbar-nav-dop">
+                    <li class="d-block d-lg-none mb-2">
+                      <div class="ff-BST fw-900 text-22 text-uppercase text-white ps-3">Welcome, Kane</div>
+                    </li>
+                    <li class="nav-item nav-item-dop dropdown">
+                      <div class="nav-link dropdown-toggle dropdown-toggle-dop" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shows
+                      </div>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Mark Bouris SoloPodcast</a></li>
+                        <li><a class="dropdown-item" href="#">Straight Talk</a></li>
+                        <li><a class="dropdown-item" href="#">Project 100</a></li>
+                        <li><a class="dropdown-item" href="#">Property Insights</a></li>
+                        <li><a class="dropdown-item" href="#">Economic Update with Kouky</a></li>
+                        <li><a class="dropdown-item" href="#">The Mentor</a></li>
+                        <li><a class="dropdown-item" href="#">Survive & Thrive</a></li>
+                        <li><a class="dropdown-item" href="#">Going Public</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item nav-item-dop dropdown">
+                      <div class="nav-link dropdown-toggle dropdown-toggle-dop" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Features
+                      </div>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Property Insights</a></li>
+                        <li><a class="dropdown-item" href="#">The Mentor</a></li>
+                        <li><a class="dropdown-item" href="#">Survive & Thrive</a></li>
+                        <li><a class="dropdown-item" href="#">Going Public</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item nav-item-dop">
+                      <a class="nav-link" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item nav-item-dop">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                  <div class="gap-1 d-none d-lg-flex">
+                    <div class="text-dop text-white">Welcome, Kane</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M15 8.83301L10.5893 13.2438C10.2638 13.5692 9.73618 13.5692 9.41074 13.2438L5 8.83301" stroke="white" stroke-width="1.67" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div class="nav-extra-links d-block d-lg-none">
+                    <ul class="form_header">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Solo Podcast MB</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Masterclasses</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><button class="btn btn-gradient mt-3 mt-lg-0 btn_big" type="button"><span>Log Out</span></button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nav-extra-links d-none d-lg-flex">
+              <ul>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Solo Podcast MB</a></li>
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Masterclasses</a></li>
+                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Log Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>  
+      </header>
+
+      <button class="scroll-btn" id="scrollBtn">
+        <span class="scrollDown" id="scrollDown">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M8 12L12 16M12 16L16 12M12 16V8M7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        SCROLL
+        <span class="scrollUp" id="scrollUp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M8 12L12 8M12 8L16 12M12 8V16M7.8 3H16.2C17.8802 3 18.7202 3 19.362 3.32698C19.9265 3.6146 20.3854 4.07354 20.673 4.63803C21 5.27976 21 6.11984 21 7.8V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V7.8C3 6.11984 3 5.27976 3.32698 4.63803C3.6146 4.07354 4.07354 3.6146 4.63803 3.32698C5.27976 3 6.11984 3 7.8 3Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </button>
+
+      <section class="section section_top_learn_detail overflow-hidden border_bottom">
+        <div class="container">
+          <div class="position-relative z-3">
+            <div class="d-flex flex-column gap-3 mb-4">
+              <h1 class="name_big name_big_dop text-white white-space-nowrap text-uppercase">
+                MARK BOURIS
+              </h1>
+              <h2 class="name_big name_big_dop white-space-nowrap text-uppercase fw-900 head-leaner head-leaner_2 mb-2">
+                PLAYBOOK FOR SUCCESS
+              </h2>
+            </div>
+            <div class="container_sm_dop">
+              <div class="text-md text-white">
+                Mark Bouris is one of Australia’s business leaders, with decades of success and experience in financial services and technology. 
+              </div>
+            </div>
+          </div>
+          <div class="grid_block">
+            <div class="row row-big">
+              <div class="col-big col-md-4">
+                <div class="item_grid_block">
+                  <div class="pt-2 pb-1">
+                    <img class="logo-guest" src="./assets/img/svg/logo.svg" alt="logo">
+                  </div>
+                  <div>
+                    <h3 class="h3 text-uppercase color-orange mb-2">10 CHAPTERS</h3>
+                    <div class="text-footer text-white">
+                      Mark Bouris teaches you the structure/framework he employs to build successful businesses.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-big col-md-4">
+                <div class="item_grid_block">
+                  <div class="pt-2 pb-1">
+                    <img class="logo-guest" src="./assets/img/svg/logo.svg" alt="logo">
+                  </div>
+                  <div>
+                    <h3 class="h3 text-uppercase color-orange mb-2">32 Videos</h3>
+                    <div class="text-footer text-white">
+                      Enroll today to get access to video lessons and exclusive materials. Learn at your own pace on mobile or desktop.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-big col-md-4">
+                <div class="item_grid_block">
+                  <div class="pt-2 pb-1">
+                    <img class="logo-guest" src="./assets/img/svg/logo.svg" alt="logo">
+                  </div>
+                  <div>
+                    <h3 class="h3 text-uppercase color-orange mb-2">join now</h3>
+                    <div class="text-footer text-white">
+                      Annual membership save 40% only A$125/Year. Monthly membership A$14.50/monthly
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_profile section_profile_dop">
+        <div class="wrapper_profile_block gap-0 align-items-end">
+          <div class="profile_block_img" style="background-image: url('./assets/img/png/MarkBouris-scaled.png');"></div>
+          <div class="profile_block_content profile_block_content_dop">
+            <div class="container_md_dop position-relative">
+              <h2 class="h2 text-white text-uppercase lh-1">mark bouris</h2>
+              <div class="title fw-900 text-white text-uppercase lh-1 mb-3">BUILD A SUCCESSFUL BUSINESS.</div>
+              <div class="text-sm text-white">
+                Mark Bouris is one of Australia’s business leaders, with decades of success and experience in financial services and technology. In this Masterclass, he shares the successful framework he has developed over 40 years in business into 10 easy steps/chapters. There should be nothing happening in your business that doesn’t logically fit under one of the 10 chapters of this playbook. This playbook for success is something Mark recommends you adopt in your own business by revisiting each month. Watch as Mark Bouris teaches you each of these steps and how to implement them to achieve success in your business.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_access section_access_dop">
+        <div class="container">
+          <div class="text-xl text-xl-dop text-white ff-BST fw-900">
+            COURSE FEATURES
+          </div>
+          <div class="wrapper_course">
+            <div class="line_course">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h2 class="h2 text-white text-uppercase fw-900">10 LESSONS</h2>
+                </div>
+                <div class="col-md-6">
+                  <div class="container_episod_dop mt-4 mt-md-0">
+                    <div class="text-footer text-white">
+                      Watch, listen, and learn as Mark Bouris runs through his Playbook in his first-ever online MasterClass.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line_course">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h2 class="h2 text-white text-uppercase fw-900">MATERIALS</h2>
+                </div>
+                <div class="col-md-6">
+                  <div class="container_episod_dop mt-4 mt-md-0">
+                    <div class="text-footer text-white">
+                      A downloadable workbook accompanies each chapter, with lesson summaries, and supplemental material.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line_course">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h2 class="h2 text-white text-uppercase fw-900">NOTES</h2>
+                </div>
+                <div class="col-md-6">
+                  <div class="container_episod_dop mt-4 mt-md-0">
+                    <div class="text-footer text-white">
+                      Take notes at any time within any chapter. Notes can be stored, printed or downloaded as desired.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line_course">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h2 class="h2 text-white text-uppercase fw-900">CERTIFIED</h2>
+                </div>
+                <div class="col-md-6">
+                  <div class="container_episod_dop mt-4 mt-md-0">
+                    <div class="text-footer text-white">
+                      Those of you who pass with a quiz score above 80% will recieve a Playbook Certified Badge.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line_course">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h2 class="h2 text-white text-uppercase fw-900">ANYTIME, ANYWHERE</h2>
+                </div>
+                <div class="col-md-6">
+                  <div class="container_episod_dop mt-4 mt-md-0">
+                    <div class="text-footer text-white">
+                      Learn on your own terms, at your own pace on mobile, desktop, or tablet.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_video section_video_learn" style="background-image: url('./assets/img/jpg/hero-video-become-5.jpeg')">
+        <div class="container">
+          <div class="wrapper_video_content">
+            <div class="video_content">
+              <div class="d-flex align-items-end gap-3">
+                <svg class="bgblur_img" xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+                  <foreignObject x="-26" y="-26" width="110" height="110"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(13px);clip-path:url(#bgblur_0_1_990_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="26" x="1" y="1" width="56" height="56" rx="14" fill="white" fill-opacity="0.09" stroke="white" stroke-width="2"></rect>
+                  <path d="M24.4385 34.8271C24.4385 36.398 26.1664 37.3557 27.4985 36.5231L36.0082 31.2045C37.2615 30.4212 37.2615 28.5959 36.0082 27.8126L27.4985 22.494C26.1664 21.6614 24.4385 22.6191 24.4385 24.19V34.8271Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <defs>
+                    <clipPath id="bgblur_0_1_990_clip_path"><rect transform="translate(26 26)" x="1" y="1" width="56" height="56" rx="14"></rect>
+                  </clipPath></defs>
+                </svg>
+                <div>
+                  <h5 class="h5 lh-1 text-uppercase text-white">
+                    INTRODUCTION<br class="d-none d-lg-block">
+                    MARK BOURIS
+                  </h5>
+                </div>
+              </div>
+              <div class="text-footer text-white">
+                Jack will take you through how you satisfy your customers’ emotions, how to get the most out of your staff, how to innovate and utilise technology, and much more. 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_detail">
+        <div class="container">
+          <div class="wrapper_course">
+            <div class="line_course">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <h2 class="h2 text-white text-uppercase fw-900">PLAYBOOK FOR SUCCESS</h2>
+                </div>
+                <div class="col-md-7">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="text text-episod mb-2">Speaker</div>
+                      <h5 class="h5 lh-1 text-white text-uppercase">MARK BOURIS</h5>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="text text-episod mb-2">Total Course</div>
+                      <h5 class="h5 lh-1 text-white text-uppercase">10 chapterS</h5>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="text text-episod mb-2">Material</div>
+                      <h5 class="h5 lh-1 text-white text-uppercase">available</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper_chapter">
+            <div class="line_chapter">
+              <div class="row">
+                <div class="col-md-6 d-flex">
+                  <div class="row w-100">
+                    <div class="col-md-4 d-flex">
+                      <h2 class="h2 text-white text-uppercase fw-900">01</h2>
+                    </div>
+                    <div class="col-md-8 d-flex">
+                      <div class="d-flex flex-column justify-content-between w-100">
+                        <div>
+                          <div class="text-dop text-white">Chapter 1</div>
+                          <h5 class="h5 lh-1 text-white text-uppercase mb-2">PURPOSE and CUSTOMER EMOTIONS</h5>
+                        </div>
+                        <div class="block_video">
+                          <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M9.5 8.96533C9.5 8.48805 9.5 8.24941 9.59974 8.11618C9.68666 8.00007 9.81971 7.92744 9.96438 7.9171C10.1304 7.90525 10.3311 8.03429 10.7326 8.29239L15.4532 11.3271C15.8016 11.551 15.9758 11.663 16.0359 11.8054C16.0885 11.9298 16.0885 12.0702 16.0359 12.1946C15.9758 12.337 15.8016 12.449 15.4532 12.6729L10.7326 15.7076C10.3311 15.9657 10.1304 16.0948 9.96438 16.0829C9.81971 16.0726 9.68666 15.9999 9.59974 15.8838C9.5 15.7506 9.5 15.512 9.5 15.0347V8.96533Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M3 7.8C3 6.11984 3 5.27976 3.32698 4.63803C3.6146 4.07354 4.07354 3.6146 4.63803 3.32698C5.27976 3 6.11984 3 7.8 3H16.2C17.8802 3 18.7202 3 19.362 3.32698C19.9265 3.6146 20.3854 4.07354 20.673 4.63803C21 5.27976 21 6.11984 21 7.8V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V7.8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="text-min text-white">Watch Video</div>
+                          </div>
+                          <div class="text-min text-white">15:25</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-lg-1 col-md-5 mt-3 mt-md-0">
+                  <div class="text text-white mb-2">
+                    This is why Mark Bouris articulated his Playbook for Success into an online program for SMEs. It’s about learning how to nurture creativity, innovation and success in business.  Launching and running any business or start-up is like jumping off the highest diving board before you’re taught how to swim.
+                  </div>
+                  <div class="text text-white">
+                    And there’s no such thing as a lifeguard on duty to pull you out when things go wrong. There’s no university degree that covers the secrets to business success, and no owner’s manual that teaches you how to keep the lights on.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line_chapter">
+              <div class="row">
+                <div class="col-md-6 d-flex">
+                  <div class="row w-100">
+                    <div class="col-md-4 d-flex">
+                      <h2 class="h2 text-white text-uppercase fw-900">02</h2>
+                    </div>
+                    <div class="col-md-8 d-flex">
+                      <div class="d-flex flex-column justify-content-between w-100">
+                        <div>
+                          <div class="text-dop text-white">Chapter 1</div>
+                          <h5 class="h5 lh-1 text-white text-uppercase mb-2">STRUCTURE</h5>
+                        </div>
+                        <div class="block_video">
+                          <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M9.5 8.96533C9.5 8.48805 9.5 8.24941 9.59974 8.11618C9.68666 8.00007 9.81971 7.92744 9.96438 7.9171C10.1304 7.90525 10.3311 8.03429 10.7326 8.29239L15.4532 11.3271C15.8016 11.551 15.9758 11.663 16.0359 11.8054C16.0885 11.9298 16.0885 12.0702 16.0359 12.1946C15.9758 12.337 15.8016 12.449 15.4532 12.6729L10.7326 15.7076C10.3311 15.9657 10.1304 16.0948 9.96438 16.0829C9.81971 16.0726 9.68666 15.9999 9.59974 15.8838C9.5 15.7506 9.5 15.512 9.5 15.0347V8.96533Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M3 7.8C3 6.11984 3 5.27976 3.32698 4.63803C3.6146 4.07354 4.07354 3.6146 4.63803 3.32698C5.27976 3 6.11984 3 7.8 3H16.2C17.8802 3 18.7202 3 19.362 3.32698C19.9265 3.6146 20.3854 4.07354 20.673 4.63803C21 5.27976 21 6.11984 21 7.8V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V7.8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="text-min text-white">Watch Video</div>
+                          </div>
+                          <div class="text-min text-white">15:25</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-lg-1 col-md-5 mt-3 mt-md-0">
+                  <div class="text text-white mb-2">
+                    This is why Mark Bouris articulated his Playbook for Success into an online program for SMEs. It’s about learning how to nurture creativity, innovation and success in business.  Launching and running any business or start-up is like jumping off the highest diving board before you’re taught how to swim.
+                  </div>
+                  <div class="text text-white">
+                    And there’s no such thing as a lifeguard on duty to pull you out when things go wrong. There’s no university degree that covers the secrets to business success, and no owner’s manual that teaches you how to keep the lights on.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line_chapter">
+              <div class="row">
+                <div class="col-md-6 d-flex">
+                  <div class="row w-100">
+                    <div class="col-md-4 d-flex">
+                      <h2 class="h2 text-white text-uppercase fw-900">03</h2>
+                    </div>
+                    <div class="col-md-8 d-flex">
+                      <div class="d-flex flex-column justify-content-between w-100">
+                        <div>
+                          <div class="text-dop text-white">Chapter 1</div>
+                          <h5 class="h5 lh-1 text-white text-uppercase mb-2">STAFFING</h5>
+                        </div>
+                        <div class="block_video">
+                          <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M9.5 8.96533C9.5 8.48805 9.5 8.24941 9.59974 8.11618C9.68666 8.00007 9.81971 7.92744 9.96438 7.9171C10.1304 7.90525 10.3311 8.03429 10.7326 8.29239L15.4532 11.3271C15.8016 11.551 15.9758 11.663 16.0359 11.8054C16.0885 11.9298 16.0885 12.0702 16.0359 12.1946C15.9758 12.337 15.8016 12.449 15.4532 12.6729L10.7326 15.7076C10.3311 15.9657 10.1304 16.0948 9.96438 16.0829C9.81971 16.0726 9.68666 15.9999 9.59974 15.8838C9.5 15.7506 9.5 15.512 9.5 15.0347V8.96533Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M3 7.8C3 6.11984 3 5.27976 3.32698 4.63803C3.6146 4.07354 4.07354 3.6146 4.63803 3.32698C5.27976 3 6.11984 3 7.8 3H16.2C17.8802 3 18.7202 3 19.362 3.32698C19.9265 3.6146 20.3854 4.07354 20.673 4.63803C21 5.27976 21 6.11984 21 7.8V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V7.8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="text-min text-white">Watch Video</div>
+                          </div>
+                          <div class="text-min text-white">15:25</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-lg-1 col-md-5 mt-3 mt-md-0">
+                  <div class="text text-white mb-2">
+                    This is why Mark Bouris articulated his Playbook for Success into an online program for SMEs. It’s about learning how to nurture creativity, innovation and success in business.  Launching and running any business or start-up is like jumping off the highest diving board before you’re taught how to swim.
+                  </div>
+                  <div class="text text-white">
+                    And there’s no such thing as a lifeguard on duty to pull you out when things go wrong. There’s no university degree that covers the secrets to business success, and no owner’s manual that teaches you how to keep the lights on.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line_chapter">
+              <div class="row">
+                <div class="col-md-6 d-flex">
+                  <div class="row w-100">
+                    <div class="col-md-4 d-flex">
+                      <h2 class="h2 text-white text-uppercase fw-900">04</h2>
+                    </div>
+                    <div class="col-md-8 d-flex">
+                      <div class="d-flex flex-column justify-content-between w-100">
+                        <div>
+                          <div class="text-dop text-white">Chapter 1</div>
+                          <h5 class="h5 lh-1 text-white text-uppercase mb-2">PRODUCT</h5>
+                        </div>
+                        <div class="block_video">
+                          <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M9.5 8.96533C9.5 8.48805 9.5 8.24941 9.59974 8.11618C9.68666 8.00007 9.81971 7.92744 9.96438 7.9171C10.1304 7.90525 10.3311 8.03429 10.7326 8.29239L15.4532 11.3271C15.8016 11.551 15.9758 11.663 16.0359 11.8054C16.0885 11.9298 16.0885 12.0702 16.0359 12.1946C15.9758 12.337 15.8016 12.449 15.4532 12.6729L10.7326 15.7076C10.3311 15.9657 10.1304 16.0948 9.96438 16.0829C9.81971 16.0726 9.68666 15.9999 9.59974 15.8838C9.5 15.7506 9.5 15.512 9.5 15.0347V8.96533Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M3 7.8C3 6.11984 3 5.27976 3.32698 4.63803C3.6146 4.07354 4.07354 3.6146 4.63803 3.32698C5.27976 3 6.11984 3 7.8 3H16.2C17.8802 3 18.7202 3 19.362 3.32698C19.9265 3.6146 20.3854 4.07354 20.673 4.63803C21 5.27976 21 6.11984 21 7.8V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V7.8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="text-min text-white">Watch Video</div>
+                          </div>
+                          <div class="text-min text-white">15:25</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-lg-1 col-md-5 mt-3 mt-md-0">
+                  <div class="text text-white mb-2">
+                    This is why Mark Bouris articulated his Playbook for Success into an online program for SMEs. It’s about learning how to nurture creativity, innovation and success in business.  Launching and running any business or start-up is like jumping off the highest diving board before you’re taught how to swim.
+                  </div>
+                  <div class="text text-white">
+                    And there’s no such thing as a lifeguard on duty to pull you out when things go wrong. There’s no university degree that covers the secrets to business success, and no owner’s manual that teaches you how to keep the lights on.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line_chapter">
+              <div class="row">
+                <div class="col-md-6 d-flex">
+                  <div class="row w-100">
+                    <div class="col-md-4 d-flex">
+                      <h2 class="h2 text-white text-uppercase fw-900">05</h2>
+                    </div>
+                    <div class="col-md-8 d-flex">
+                      <div class="d-flex flex-column justify-content-between w-100">
+                        <div>
+                          <div class="text-dop text-white">Chapter 1</div>
+                          <h5 class="h5 lh-1 text-white text-uppercase mb-2">COMMUNICATING</h5>
+                        </div>
+                        <div class="block_video">
+                          <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M9.5 8.96533C9.5 8.48805 9.5 8.24941 9.59974 8.11618C9.68666 8.00007 9.81971 7.92744 9.96438 7.9171C10.1304 7.90525 10.3311 8.03429 10.7326 8.29239L15.4532 11.3271C15.8016 11.551 15.9758 11.663 16.0359 11.8054C16.0885 11.9298 16.0885 12.0702 16.0359 12.1946C15.9758 12.337 15.8016 12.449 15.4532 12.6729L10.7326 15.7076C10.3311 15.9657 10.1304 16.0948 9.96438 16.0829C9.81971 16.0726 9.68666 15.9999 9.59974 15.8838C9.5 15.7506 9.5 15.512 9.5 15.0347V8.96533Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M3 7.8C3 6.11984 3 5.27976 3.32698 4.63803C3.6146 4.07354 4.07354 3.6146 4.63803 3.32698C5.27976 3 6.11984 3 7.8 3H16.2C17.8802 3 18.7202 3 19.362 3.32698C19.9265 3.6146 20.3854 4.07354 20.673 4.63803C21 5.27976 21 6.11984 21 7.8V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V7.8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="text-min text-white">Watch Video</div>
+                          </div>
+                          <div class="text-min text-white">15:25</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-lg-1 col-md-5 mt-3 mt-md-0">
+                  <div class="text text-white mb-2">
+                    This is why Mark Bouris articulated his Playbook for Success into an online program for SMEs. It’s about learning how to nurture creativity, innovation and success in business.  Launching and running any business or start-up is like jumping off the highest diving board before you’re taught how to swim.
+                  </div>
+                  <div class="text text-white">
+                    And there’s no such thing as a lifeguard on duty to pull you out when things go wrong. There’s no university degree that covers the secrets to business success, and no owner’s manual that teaches you how to keep the lights on.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line_chapter">
+              <div class="row">
+                <div class="col-md-6 d-flex">
+                  <div class="row w-100">
+                    <div class="col-md-4 d-flex">
+                      <h2 class="h2 text-white text-uppercase fw-900">06</h2>
+                    </div>
+                    <div class="col-md-8 d-flex">
+                      <div class="d-flex flex-column justify-content-between w-100">
+                        <div>
+                          <div class="text-dop text-white">Chapter 1</div>
+                          <h5 class="h5 lh-1 text-white text-uppercase mb-2">TECHNOLOGY</h5>
+                        </div>
+                        <div class="block_video">
+                          <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M9.5 8.96533C9.5 8.48805 9.5 8.24941 9.59974 8.11618C9.68666 8.00007 9.81971 7.92744 9.96438 7.9171C10.1304 7.90525 10.3311 8.03429 10.7326 8.29239L15.4532 11.3271C15.8016 11.551 15.9758 11.663 16.0359 11.8054C16.0885 11.9298 16.0885 12.0702 16.0359 12.1946C15.9758 12.337 15.8016 12.449 15.4532 12.6729L10.7326 15.7076C10.3311 15.9657 10.1304 16.0948 9.96438 16.0829C9.81971 16.0726 9.68666 15.9999 9.59974 15.8838C9.5 15.7506 9.5 15.512 9.5 15.0347V8.96533Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M3 7.8C3 6.11984 3 5.27976 3.32698 4.63803C3.6146 4.07354 4.07354 3.6146 4.63803 3.32698C5.27976 3 6.11984 3 7.8 3H16.2C17.8802 3 18.7202 3 19.362 3.32698C19.9265 3.6146 20.3854 4.07354 20.673 4.63803C21 5.27976 21 6.11984 21 7.8V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V7.8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="text-min text-white">Watch Video</div>
+                          </div>
+                          <div class="text-min text-white">15:25</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-lg-1 col-md-5 mt-3 mt-md-0">
+                  <div class="text text-white mb-2">
+                    This is why Mark Bouris articulated his Playbook for Success into an online program for SMEs. It’s about learning how to nurture creativity, innovation and success in business.  Launching and running any business or start-up is like jumping off the highest diving board before you’re taught how to swim.
+                  </div>
+                  <div class="text text-white">
+                    And there’s no such thing as a lifeguard on duty to pull you out when things go wrong. There’s no university degree that covers the secrets to business success, and no owner’s manual that teaches you how to keep the lights on.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line_chapter">
+              <div class="row">
+                <div class="col-md-6 d-flex">
+                  <div class="row w-100">
+                    <div class="col-md-4 d-flex">
+                      <h2 class="h2 text-white text-uppercase fw-900">07</h2>
+                    </div>
+                    <div class="col-md-8 d-flex">
+                      <div class="d-flex flex-column justify-content-between w-100">
+                        <div>
+                          <div class="text-dop text-white">Chapter 1</div>
+                          <h5 class="h5 lh-1 text-white text-uppercase mb-2">INNOVATION</h5>
+                        </div>
+                        <div class="block_video">
+                          <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M9.5 8.96533C9.5 8.48805 9.5 8.24941 9.59974 8.11618C9.68666 8.00007 9.81971 7.92744 9.96438 7.9171C10.1304 7.90525 10.3311 8.03429 10.7326 8.29239L15.4532 11.3271C15.8016 11.551 15.9758 11.663 16.0359 11.8054C16.0885 11.9298 16.0885 12.0702 16.0359 12.1946C15.9758 12.337 15.8016 12.449 15.4532 12.6729L10.7326 15.7076C10.3311 15.9657 10.1304 16.0948 9.96438 16.0829C9.81971 16.0726 9.68666 15.9999 9.59974 15.8838C9.5 15.7506 9.5 15.512 9.5 15.0347V8.96533Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M3 7.8C3 6.11984 3 5.27976 3.32698 4.63803C3.6146 4.07354 4.07354 3.6146 4.63803 3.32698C5.27976 3 6.11984 3 7.8 3H16.2C17.8802 3 18.7202 3 19.362 3.32698C19.9265 3.6146 20.3854 4.07354 20.673 4.63803C21 5.27976 21 6.11984 21 7.8V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V7.8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="text-min text-white">Watch Video</div>
+                          </div>
+                          <div class="text-min text-white">15:25</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-lg-1 col-md-5 mt-3 mt-md-0">
+                  <div class="text text-white mb-2">
+                    This is why Mark Bouris articulated his Playbook for Success into an online program for SMEs. It’s about learning how to nurture creativity, innovation and success in business.  Launching and running any business or start-up is like jumping off the highest diving board before you’re taught how to swim.
+                  </div>
+                  <div class="text text-white">
+                    And there’s no such thing as a lifeguard on duty to pull you out when things go wrong. There’s no university degree that covers the secrets to business success, and no owner’s manual that teaches you how to keep the lights on.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line_chapter">
+              <div class="row">
+                <div class="col-md-6 d-flex">
+                  <div class="row w-100">
+                    <div class="col-md-4 d-flex">
+                      <h2 class="h2 text-white text-uppercase fw-900">08</h2>
+                    </div>
+                    <div class="col-md-8 d-flex">
+                      <div class="d-flex flex-column justify-content-between w-100">
+                        <div>
+                          <div class="text-dop text-white">Chapter 1</div>
+                          <h5 class="h5 lh-1 text-white text-uppercase mb-2">FINAL REMARKS</h5>
+                        </div>
+                        <div class="block_video">
+                          <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M9.5 8.96533C9.5 8.48805 9.5 8.24941 9.59974 8.11618C9.68666 8.00007 9.81971 7.92744 9.96438 7.9171C10.1304 7.90525 10.3311 8.03429 10.7326 8.29239L15.4532 11.3271C15.8016 11.551 15.9758 11.663 16.0359 11.8054C16.0885 11.9298 16.0885 12.0702 16.0359 12.1946C15.9758 12.337 15.8016 12.449 15.4532 12.6729L10.7326 15.7076C10.3311 15.9657 10.1304 16.0948 9.96438 16.0829C9.81971 16.0726 9.68666 15.9999 9.59974 15.8838C9.5 15.7506 9.5 15.512 9.5 15.0347V8.96533Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M3 7.8C3 6.11984 3 5.27976 3.32698 4.63803C3.6146 4.07354 4.07354 3.6146 4.63803 3.32698C5.27976 3 6.11984 3 7.8 3H16.2C17.8802 3 18.7202 3 19.362 3.32698C19.9265 3.6146 20.3854 4.07354 20.673 4.63803C21 5.27976 21 6.11984 21 7.8V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V7.8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="text-min text-white">Watch Video</div>
+                          </div>
+                          <div class="text-min text-white">15:25</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-lg-1 col-md-5 mt-3 mt-md-0">
+                  <div class="text text-white mb-2">
+                    This is why Mark Bouris articulated his Playbook for Success into an online program for SMEs. It’s about learning how to nurture creativity, innovation and success in business.  Launching and running any business or start-up is like jumping off the highest diving board before you’re taught how to swim.
+                  </div>
+                  <div class="text text-white">
+                    And there’s no such thing as a lifeguard on duty to pull you out when things go wrong. There’s no university degree that covers the secrets to business success, and no owner’s manual that teaches you how to keep the lights on.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line_chapter">
+              <div class="row">
+                <div class="col-md-6 d-flex">
+                  <div class="row w-100">
+                    <div class="col-md-4 d-flex">
+                      <h2 class="h2 text-white text-uppercase fw-900">09</h2>
+                    </div>
+                    <div class="col-md-8 d-flex">
+                      <div class="d-flex flex-column justify-content-between w-100">
+                        <div>
+                          <div class="text-dop text-white">Chapter 1</div>
+                          <h5 class="h5 lh-1 text-white text-uppercase mb-2">MARK BOURIS Q&A</h5>
+                        </div>
+                        <div class="block_video">
+                          <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M9.5 8.96533C9.5 8.48805 9.5 8.24941 9.59974 8.11618C9.68666 8.00007 9.81971 7.92744 9.96438 7.9171C10.1304 7.90525 10.3311 8.03429 10.7326 8.29239L15.4532 11.3271C15.8016 11.551 15.9758 11.663 16.0359 11.8054C16.0885 11.9298 16.0885 12.0702 16.0359 12.1946C15.9758 12.337 15.8016 12.449 15.4532 12.6729L10.7326 15.7076C10.3311 15.9657 10.1304 16.0948 9.96438 16.0829C9.81971 16.0726 9.68666 15.9999 9.59974 15.8838C9.5 15.7506 9.5 15.512 9.5 15.0347V8.96533Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M3 7.8C3 6.11984 3 5.27976 3.32698 4.63803C3.6146 4.07354 4.07354 3.6146 4.63803 3.32698C5.27976 3 6.11984 3 7.8 3H16.2C17.8802 3 18.7202 3 19.362 3.32698C19.9265 3.6146 20.3854 4.07354 20.673 4.63803C21 5.27976 21 6.11984 21 7.8V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V7.8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="text-min text-white">Watch Video</div>
+                          </div>
+                          <div class="text-min text-white">15:25</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-lg-1 col-md-5 mt-3 mt-md-0">
+                  <div class="text text-white mb-2">
+                    This is why Mark Bouris articulated his Playbook for Success into an online program for SMEs. It’s about learning how to nurture creativity, innovation and success in business.  Launching and running any business or start-up is like jumping off the highest diving board before you’re taught how to swim.
+                  </div>
+                  <div class="text text-white">
+                    And there’s no such thing as a lifeguard on duty to pull you out when things go wrong. There’s no university degree that covers the secrets to business success, and no owner’s manual that teaches you how to keep the lights on.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <footer id="footer" class="footer">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col-lg-8">
+              <div class="row">
+                <div class="col-8 col-lg-12">
+                  <h1 class="h1 text-white text-uppercase lh-1 mb-3">
+                    Ready to take your <br class="d-none d-lg-block">business to <br class="d-none d-lg-block">
+                    <span class="head-leaner head-leaner_1">the next level?</span>
+                  </h1>
+                  <a href="#" class="btn btn-gradient text-uppercase btn-big">
+                    <span>Join Mentored+</span>
+                  </a>
+                </div>
+                <div class="col-4 d-block d-lg-none">
+                  <div class="footer-img-1 footer-img-group footer-img-group-1">
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-1.png" alt="">
+                      <div class="footer-img-content position-relative z-1">
+                        <div class="text-sm text-white">Mark Bouris</div>
+                        <div class="text text-white">Founder of Mentored</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-3.png" alt="">
+                      <div class="footer-img-content position-relative z-1">
+                        <div class="text-sm text-white">Harry Triguboff</div>
+                        <div class="text text-white">Owner Meriton Suite</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-5.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer_content">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <div class="ltd_block">
+                      <div class="text-md color-gray-4 mb-2">
+                        The mentor platform pty ltd.
+                      </div>
+                      <div class="text-footer color-gray-4">
+                        Shop 1, 304-310 Victoria St <br> Darlinghurst NSW, 2010
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="title-footer fw=600 color-black-600">Our Shows</div>
+                        <ul>
+                          <li><a href="#" class="footer_link">The Mentor (Show)</a></li>
+                          <li><a href="#" class="footer_link">Straight Talk (Show)</a></li>
+                          <li><a href="#" class="footer_link">Survive and Thrive</a></li>
+                          <li><a href="#" class="footer_link">Property Insights</a></li>
+                          <li><a href="#" class="footer_link">Economic Update with Kouky</a></li>
+                          <li><a href="#" class="footer_link">Solo Q&A Podcast</a></li>
+                          <li><a href="#" class="footer_link">Project 100</a></li>
+                          <li><a href="#" class="footer_link">Going Public</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-6">
+                        <div class="title-footer fw=600 color-black-600">About Company</div>
+                        <ul>
+                          <li><a href="#" class="footer_link">About Mentored</a></li>
+                          <li><a href="#" class="footer_link">Mentored Plus</a></li>
+                          <li><a href="#" class="footer_link">Events</a></li>
+                          <li><a href="#" class="footer_link">Partners</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="wrapper_footer_image">
+                <div class="d-flex gap-2 align-items-center">
+                  <div class="footer-img-group footer-img-group-1">
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-1.png" alt="">
+                      <div class="footer-img-content position-relative z-1">
+                        <div class="text-sm text-white">Mark Bouris</div>
+                        <div class="text text-white">Founder of Mentored</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-3.png" alt="">
+                      <div class="footer-img-content position-relative z-1">
+                        <div class="text-sm text-white">Harry Triguboff</div>
+                        <div class="text text-white">Owner Meriton Suite</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-5.png" alt="">
+                    </a>
+                  </div>
+                  <div class="footer-img-group footer-img-group-2 d-none d-lg-flex">
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-2.png" alt="">
+                      <div class="footer-img-content position-relative z-1">
+                        <div class="text-sm text-white">DR. Aengus Tran</div>
+                        <div class="text text-white">CEO Harrison Ai</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item-footer-img">
+                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-4.png" alt="">
+                      <div class="footer-img-content position-relative z-1">
+                        <div class="text-sm text-white">Ray Hadley</div>
+                        <div class="text text-white">Retired radio legend </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="wrapper_logo_footer">
+              <img class="logo_footer img-fluid" src="./assets/img/svg/logo.svg" alt="">
+            </div>
+            <div class="d-flex align-items-start align-items-md-center flex-column flex-md-row justify-content-between gap-3">
+              <div class="text-dop color-gray-4 fw-300">A<span class="text-md-lowercase">LL RIGHTS RESERVED - 2022  THE MENTORed PLATFORM PTY LTD</span></div>
+              <div class="social_icons">
+                <a href="#" class="social_icon">
+                  <img class="img-fluid" src="./assets/img/svg/social/facebook.svg" alt="facebook">
+                </a>
+                <a href="#" class="social_icon">
+                  <img class="img-fluid" src="./assets/img/svg/social/instagram.svg" alt="instagram">
+                </a>
+                <a href="#" class="social_icon">
+                  <img class="img-fluid" src="./assets/img/svg/social/linkedin.svg" alt="linkedin">
+                </a>
+                <a href="#" class="social_icon">
+                  <img class="img-fluid" src="./assets/img/svg/social/youtube.svg" alt="youtube">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- <script src="./assets/dependencies/wow/js/wow.min.js"></script> -->
+    <script src="./assets/dependencies/swiper/js/swiper.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/slider.js"></script>
+
+  </body>
+</html>
