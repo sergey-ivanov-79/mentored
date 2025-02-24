@@ -24,6 +24,10 @@
 .section_other_episodes {
   padding-top: 84px;
   padding-bottom: 84px;
+  @media (max-width: 767.98px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .background-img {
   min-width: 90px;
@@ -61,6 +65,7 @@
   z-index: 1;
   position: relative;
   border-bottom: 1px solid var(--BLACK-800, #262626);
+  cursor: pointer;
   @media (max-width: 767.98px) {
     flex-wrap: wrap;
     padding-top: 20px;
@@ -194,12 +199,21 @@
     margin-bottom: 5px;
     &_big {
       height: 425px;
-      @media (max-width: 767.98px) {
-        height: 186px;
+      @media (max-width: 991.98px) {
+        height: 286px;
       }
     }
     &_min {
       height: 186px;
+      @media (max-width: 991.98px) {
+        height: 286px;
+      }
+    }
+    &_calc {
+      height: calc(100% - 25px);
+      @media (max-width: 991.98px) {
+        height: 286px;
+      }
     }
   }
 }
@@ -210,6 +224,12 @@
   padding: 15px 20px;
   display: flex;
   gap: 10px;
+  &_dop {
+    justify-content: space-between;
+    @media (max-width: 991.98px) {
+      justify-content: end;
+    }
+  }
 }
 .item_btn {
   border-radius: var(--Roundness-Round-Inside, 6px);
@@ -221,6 +241,16 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  text-decoration: none;
+  &_big {
+    gap: 6px;
+    width: auto;
+    padding: 10px 16px;
+    line-height: 1;
+    @media (max-width: 991.98px) {
+      padding: 10px;
+    }
+  }
   &_red {
     background: var(--RED-MEN-500, #F44336);
     border: 1px solid var(--WHITE, #F44336);

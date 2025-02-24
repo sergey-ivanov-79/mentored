@@ -71,3 +71,9 @@
     box-shadow: none !important;
   }
 }
+.textarea {
+  // height: 62px;
+  resize: none;
+  max-height: 62px;
+  min-height: 62px;
+}

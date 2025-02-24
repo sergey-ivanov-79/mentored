@@ -15,6 +15,10 @@
   padding-top: 105px;
   padding-bottom: 85px;
   // overflow: hidden;
+  &_dop {
+    padding-top: 55px;
+    padding-bottom: 75px;
+  }
   @media (max-width: 767.98px) {
     padding-top: 30px;
     padding-bottom: 30px;
