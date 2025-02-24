@@ -61,7 +61,26 @@
   &-2 {
     position: absolute;
     right: 0;
-    top: 20%;
+    bottom: 0%;
+    margin-bottom: -107px;
+    @media (max-width: 1200px) {
+      margin-bottom: -57px;
+    }
+    @media (max-width: 991.98px) {
+      margin-bottom: -50px;
+    }
+  }
+  &-3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: -107px;
+    @media (max-width: 1200px) {
+      margin-bottom: -57px;
+    }
+    @media (max-width: 991.98px) {
+      margin-bottom: -50px;
+    }
   }
 }
 .section_membership {
@@ -139,6 +158,8 @@
   position: relative;
   @media (max-width: 767.98px) {
     margin-top: 0px;
+    display: flex;
+    flex-direction: column-reverse;
   }
   &_gray {
     margin-top: 0;
@@ -151,6 +172,7 @@
   width: 50%;
   height: 100%;
   overflow: hidden;
+  text-align: right;
   // top: 0;
   background: var(--RED-GRAD-2, radial-gradient(141.31% 243.37% at 87.11% -71.74%, #F57E35 0%, #F44336 100%));
   padding: 136px 0px 137px 218px;
@@ -160,7 +182,13 @@
     padding-left: 90px;
   }
   @media (max-width: 767.98px) {
-    display: none;
+    position: relative;
+    width: 90%;
+    padding: 30px 0px 30px 30px;
+    margin-left: auto;
+  }
+  @media (max-width: 574.98px) {
+    width: 96%;
   }
   &_1 {
     right: 0;

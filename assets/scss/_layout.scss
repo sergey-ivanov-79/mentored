@@ -138,7 +138,7 @@ tbody::-webkit-scrollbar {
     font-size: 74px;
   }
   @media (max-width: 414px) {
-    font-size: 64px;
+    font-size: 54px;
   }
 }
 .title {
@@ -467,6 +467,9 @@ ul {
 .lh-1 {
   line-height: 1 !important;
 }
+.lh-11 {
+  line-height: 1.01 !important;
+}
 .lh-15 {
   line-height: 1.5 !important;
 }
@@ -474,5 +477,5 @@ ul {
   font-family: "Big Shoulders Text", serif !important;
 }
 .ff-Bg {
-  font-family: "Bricolage Grotesque", serif;
+  font-family: "Bricolage Grotesque", serif !important;
 }

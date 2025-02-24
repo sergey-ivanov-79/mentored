@@ -53,6 +53,18 @@
     flex-direction: column;
     order: 1;
   }
+  @media (max-width: 767.98px) {
+    padding-left: 0px;
+    padding-right: 0px;
+    flex-direction: column;
+    order: 1;
+  }
+}
+.profile_block_content {
+  @media (max-width: 767.98px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .profile_block_img {
   min-width: 590px;
@@ -95,7 +107,7 @@
   overflow: hidden;
   @media (max-width: 991.98px) {
     padding-top: 110px;
-    padding-bottom: 110px;
+    padding-bottom: 90px;
   }
   @media (max-width: 767.98px) {
     padding-bottom: 0px;

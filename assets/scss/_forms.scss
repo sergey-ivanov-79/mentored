@@ -1,16 +1,4 @@
 
-.form-control-search::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: var(--BLACK-500, #7B7B7B);
-}
-.form-control-search::-moz-placeholder { /* Firefox 19+ */
-  color: var(--BLACK-500, #7B7B7B);
-}
-.form-control-search:-ms-input- { /* IE 10+ */
-  color: var(--BLACK-500, #7B7B7B);
-}
-.form-control-search:-moz-placeholder { /* Firefox 18- */
-  color: var(--BLACK-500, #7B7B7B);
-}
 .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #C4C4C4;
 }
@@ -22,6 +10,18 @@
 }
 .form-control:-moz-placeholder { /* Firefox 18- */
   color: #C4C4C4;
+}
+.form-control-search::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: var(--BLACK-500, #7B7B7B);
+}
+.form-control-search::-moz-placeholder { /* Firefox 19+ */
+  color: var(--BLACK-500, #7B7B7B);
+}
+.form-control-search:-ms-input- { /* IE 10+ */
+  color: var(--BLACK-500, #7B7B7B);
+}
+.form-control-search:-moz-placeholder { /* Firefox 18- */
+  color: var(--BLACK-500, #7B7B7B);
 }
 .input-group-custom {
   max-width: 470px;
@@ -57,7 +57,7 @@
     transition: all 0.3s;
     border-radius: 5px;
     border: 1px solid var(--BLACK-200, #D9D9D9);
-    padding: 13px 10px;
+    padding: 10px;
     &:focus {
       border-color: #2196F3;
       box-shadow: none;
