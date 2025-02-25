@@ -20,6 +20,7 @@
   }
   &-gradient {
     background: var(--RED-GRAD-2, radial-gradient(141.31% 243.37% at 87.11% -71.74%, #F57E35 0%, #F44336 100%));
+    background: linear-gradient(to right, #F44336 0%, #F57E35 100%);
     border: none;
     color: #fff !important;
     position: relative;
@@ -60,6 +61,18 @@
     &:hover {
       background: #E25245;
       color: #fff;
+    }
+    &-dop {
+      padding: 10px 12px;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--BLACK-400, #9D9D9D);
+      &:hover,
+      &.active {
+        border-color: transparent;
+        background: var(--BLACK-800, #262626);
+        color: var(--BLACK-400, #9D9D9D);
+      }
     }
   }
   &-green {
@@ -105,6 +118,13 @@
       background: transparent;
       color: #fff;
     }
+  }
+  &-coming {
+    font-family: "Big Shoulders Text";
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.1;
+    width: 200px;
   }
   &-big {
     font-family: "Big Shoulders Text", serif;

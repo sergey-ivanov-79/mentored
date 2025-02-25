@@ -77,3 +77,24 @@
   max-height: 62px;
   min-height: 62px;
 }
+.wrapper_form-select {
+  display: flex;
+  justify-content: end;
+}
+.form-select {
+  background-color: transparent;
+  max-width: 280px;
+  border-radius: var(--Roundness-Round-Inside, 6px);
+  border-color: #262626;
+  color: var(--BLACK-400, #9D9D9D);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 12px;
+  box-shadow: none !important;
+  background-image: url('../img/svg/down.svg');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  &:focus {
+    border-color: #fff;
+  }
+}

@@ -1,0 +1,16 @@
+.section_sone {
+  height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @media (max-width: 991.98px) {
+    width: auto;
+  }
+}
+.section_features {
+  padding-top: 88px;
+  padding-bottom: 74px;
+}

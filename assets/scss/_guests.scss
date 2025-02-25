@@ -54,6 +54,7 @@
   z-index: 3;
   transition: all 0.3s;
 }
+
 .grid-item {
   width: calc(20% - 32px);
   position: relative;
@@ -92,90 +93,6 @@
     }
   }
   
-  &:nth-child(5n) {
-    @media (min-width: 1400px) {
-      &:after {
-        content: '';
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 20;
-        left: 0;
-        top: 0;
-        background: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0.00) 350%);
-      }
-    }
-  }
-  &:nth-child(5n+1) {
-    @media (min-width: 1400px) {
-      &:after {
-        content: '';
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 20;
-        left: 0;
-        top: 0;
-        background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 350%);
-      }
-    }
-  }
-  &:nth-child(4n) {
-    @media (min-width: 1024px) and (max-width: 1399px) {
-      &:after {
-        content: '';
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 20;
-        left: 0;
-        top: 0;
-        background: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0.00) 350%);
-      }
-    }
-  }
-  &:nth-child(4n+1) {
-    @media (min-width: 1024px) and (max-width: 1399px) {
-      &:after {
-        content: '';
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 20;
-        left: 0;
-        top: 0;
-        background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 350%);
-      }
-    }
-  }
-  &:nth-child(3n) {
-    @media (min-width: 768px) and (max-width: 1023px) {
-      &:after {
-        content: '';
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 20;
-        left: 0;
-        top: 0;
-        background: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0.00) 350%);
-      }
-    }
-  }
-  &:nth-child(3n+1) {
-    @media (min-width: 768px) and (max-width: 1023px) {
-      &:after {
-        content: '';
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 20;
-        left: 0;
-        top: 0;
-        background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 350%);
-      }
-    }
-  }
   &:before {
     content: "";
     position: absolute;
@@ -203,6 +120,94 @@
     }
     .guest-desc {
       // transform: translateY(-10px);
+    }
+  }
+}
+.swiper-container-guests {
+  .grid-item {
+    &:nth-child(5n) {
+      @media (min-width: 1400px) {
+        &:after {
+          content: '';
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          z-index: 20;
+          left: 0;
+          top: 0;
+          background: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0.00) 350%);
+        }
+      }
+    }
+    &:nth-child(5n+1) {
+      @media (min-width: 1400px) {
+        &:after {
+          content: '';
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          z-index: 20;
+          left: 0;
+          top: 0;
+          background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 350%);
+        }
+      }
+    }
+    &:nth-child(4n) {
+      @media (min-width: 1024px) and (max-width: 1399px) {
+        &:after {
+          content: '';
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          z-index: 20;
+          left: 0;
+          top: 0;
+          background: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0.00) 350%);
+        }
+      }
+    }
+    &:nth-child(4n+1) {
+      @media (min-width: 1024px) and (max-width: 1399px) {
+        &:after {
+          content: '';
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          z-index: 20;
+          left: 0;
+          top: 0;
+          background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 350%);
+        }
+      }
+    }
+    &:nth-child(3n) {
+      @media (min-width: 768px) and (max-width: 1023px) {
+        &:after {
+          content: '';
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          z-index: 20;
+          left: 0;
+          top: 0;
+          background: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0.00) 350%);
+        }
+      }
+    }
+    &:nth-child(3n+1) {
+      @media (min-width: 768px) and (max-width: 1023px) {
+        &:after {
+          content: '';
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          z-index: 20;
+          left: 0;
+          top: 0;
+          background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 350%);
+        }
+      }
     }
   }
 }

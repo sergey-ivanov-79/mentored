@@ -447,6 +447,13 @@
   &_dop {
     padding-top: 120px;
   }
+  &_min {
+    padding-top: 72px;
+  }
+  &_extra_min {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 .wrapper_articles {
   padding-top: 100px;
@@ -455,6 +462,9 @@
   }
   @media (max-width: 767.98px) {
     padding-top: 40px;
+  }
+  &_min {
+    padding-top: 50px;
   }
 }
 .item_tag {

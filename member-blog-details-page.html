@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog details</title>
+    <title>Member Blog details</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&display=swap" rel="stylesheet">
@@ -17,12 +17,12 @@
 
   <body>
     <div class="bg-black">
-      <header id="header" class="header">
+      <header id="header" class="header header-in">
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-          <div class="container">
+          <div class="container flex-column">
             <div class="wrapper-header">
               <a class="navbar-brand" href="#">
-                <img class="logo-img" src="./assets/img/svg/logo.svg" alt="logo">
+                <img class="logo-img" src="./assets/img/svg/LOGO-SVG.svg" alt="logo">
               </a>
               <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation" wfd-invisible="true"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                 <img src="./assets/img/svg/menu.svg" alt="menu">
@@ -33,7 +33,10 @@
                   <img src="./assets/img/svg/close.svg" alt="menu">
                 </button>
                 <div class="d-lg-flex align-items-center">
-                  <ul class="navbar-nav ms-auto navbar-nav-dop">
+                  <ul class="navbar-nav ms-auto me-auto navbar-nav-dop">
+                    <li class="d-block d-lg-none mb-2">
+                      <div class="ff-BST fw-900 text-22 text-uppercase text-white ps-3">Welcome, Kane</div>
+                    </li>
                     <li class="nav-item nav-item-dop dropdown">
                       <div class="nav-link dropdown-toggle dropdown-toggle-dop" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Shows
@@ -49,6 +52,17 @@
                         <li><a class="dropdown-item" href="#">Going Public</a></li>
                       </ul>
                     </li>
+                    <li class="nav-item nav-item-dop dropdown">
+                      <div class="nav-link dropdown-toggle dropdown-toggle-dop" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Features
+                      </div>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Property Insights</a></li>
+                        <li><a class="dropdown-item" href="#">The Mentor</a></li>
+                        <li><a class="dropdown-item" href="#">Survive & Thrive</a></li>
+                        <li><a class="dropdown-item" href="#">Going Public</a></li>
+                      </ul>
+                    </li>
                     <li class="nav-item nav-item-dop">
                       <a class="nav-link" aria-current="page" href="#">About</a>
                     </li>
@@ -56,12 +70,40 @@
                       <a class="nav-link" href="#">Contact</a>
                     </li>
                   </ul>
-                  <form class="form_header text-center ms-lg-2 text-lg-left d-lg-flex gap-lg-2 align-items-center">
-                    <button class="btn btn-gradient mt-3 mt-lg-0 btn_big" type="button"><span>Log in</span></button>
-                    <button class="btn btn-gradient mt-3 mt-lg-0 btn_big" type="button"><span>Join Mentored+</span></button>
-                  </form>
+                  <div class="gap-1 d-none d-lg-flex">
+                    <div class="text-dop text-white">Welcome, Kane</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M15 8.83301L10.5893 13.2438C10.2638 13.5692 9.73618 13.5692 9.41074 13.2438L5 8.83301" stroke="white" stroke-width="1.67" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div class="nav-extra-links d-block d-lg-none">
+                    <ul class="form_header">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Solo Podcast MB</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Masterclasses</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><button class="btn btn-gradient mt-3 mt-lg-0 btn_big" type="button"><span>Log Out</span></button></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div class="nav-extra-links d-none d-lg-flex">
+              <ul>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Solo Podcast MB</a></li>
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Masterclasses</a></li>
+                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Log Out</a></li>
+              </ul>
             </div>
           </div>
         </nav>  
@@ -323,125 +365,8 @@
         </div>
       </section>
     
-      <footer id="footer" class="footer">
+      <footer id="footer" class="footer footer_dop">
         <div class="container">
-          <div class="row mb-3">
-            <div class="col-lg-8">
-              <div class="row">
-                <div class="col-8 col-lg-12">
-                  <h1 class="h1 text-white text-uppercase lh-1 mb-3">
-                    Ready to take your <br class="d-none d-lg-block">business to <br class="d-none d-lg-block">
-                    <span class="head-leaner head-leaner_1">the next level?</span>
-                  </h1>
-                  <a href="#" class="btn btn-gradient text-uppercase btn-big">
-                    <span>Join Mentored+</span>
-                  </a>
-                </div>
-                <div class="col-4 d-block d-lg-none">
-                  <div class="footer-img-1 footer-img-group footer-img-group-1">
-                    <a href="#" class="item-footer-img">
-                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-1.png" alt="">
-                      <div class="footer-img-content position-relative z-1">
-                        <div class="text-sm text-white">Mark Bouris</div>
-                        <div class="text text-white">Founder of Mentored</div>
-                      </div>
-                    </a>
-                    <a href="#" class="item-footer-img">
-                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-3.png" alt="">
-                      <div class="footer-img-content position-relative z-1">
-                        <div class="text-sm text-white">Harry Triguboff</div>
-                        <div class="text text-white">Owner Meriton Suite</div>
-                      </div>
-                    </a>
-                    <a href="#" class="item-footer-img">
-                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-5.png" alt="">
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="footer_content">
-                <div class="row">
-                  <div class="col-lg-5">
-                    <div class="ltd_block">
-                      <div class="text-md color-gray-4 mb-2">
-                        The mentor platform pty ltd.
-                      </div>
-                      <div class="text-footer color-gray-4">
-                        Shop 1, 304-310 Victoria St <br> Darlinghurst NSW, 2010
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-7">
-                    <div class="row">
-                      <div class="col-6">
-                        <div class="title-footer fw=600 color-black-600">Our Shows</div>
-                        <ul>
-                          <li><a href="#" class="footer_link">The Mentor (Show)</a></li>
-                          <li><a href="#" class="footer_link">Straight Talk (Show)</a></li>
-                          <li><a href="#" class="footer_link">Survive and Thrive</a></li>
-                          <li><a href="#" class="footer_link">Property Insights</a></li>
-                          <li><a href="#" class="footer_link">Economic Update with Kouky</a></li>
-                          <li><a href="#" class="footer_link">Solo Q&A Podcast</a></li>
-                          <li><a href="#" class="footer_link">Project 100</a></li>
-                          <li><a href="#" class="footer_link">Going Public</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-6">
-                        <div class="title-footer fw=600 color-black-600">About Company</div>
-                        <ul>
-                          <li><a href="#" class="footer_link">About Mentored</a></li>
-                          <li><a href="#" class="footer_link">Mentored Plus</a></li>
-                          <li><a href="#" class="footer_link">Events</a></li>
-                          <li><a href="#" class="footer_link">Partners</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 d-none d-lg-block">
-              <div class="wrapper_footer_image">
-                <div class="d-flex gap-2 align-items-center">
-                  <div class="footer-img-group footer-img-group-1">
-                    <a href="#" class="item-footer-img">
-                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-1.png" alt="">
-                      <div class="footer-img-content position-relative z-1">
-                        <div class="text-sm text-white">Mark Bouris</div>
-                        <div class="text text-white">Founder of Mentored</div>
-                      </div>
-                    </a>
-                    <a href="#" class="item-footer-img">
-                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-3.png" alt="">
-                      <div class="footer-img-content position-relative z-1">
-                        <div class="text-sm text-white">Harry Triguboff</div>
-                        <div class="text text-white">Owner Meriton Suite</div>
-                      </div>
-                    </a>
-                    <a href="#" class="item-footer-img">
-                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-5.png" alt="">
-                    </a>
-                  </div>
-                  <div class="footer-img-group footer-img-group-2 d-none d-lg-flex">
-                    <a href="#" class="item-footer-img">
-                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-2.png" alt="">
-                      <div class="footer-img-content position-relative z-1">
-                        <div class="text-sm text-white">DR. Aengus Tran</div>
-                        <div class="text text-white">CEO Harrison Ai</div>
-                      </div>
-                    </a>
-                    <a href="#" class="item-footer-img">
-                      <img class="bg-img bg-img-footer" src="./assets/img/png/footer-img/image-4.png" alt="">
-                      <div class="footer-img-content position-relative z-1">
-                        <div class="text-sm text-white">Ray Hadley</div>
-                        <div class="text text-white">Retired radio legend </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="footer-bottom">
             <div class="wrapper_logo_footer">
               <img class="logo_footer img-fluid" src="./assets/img/svg/logo.svg" alt="">

@@ -106,6 +106,12 @@
 }
 .benefits_blocks {
   padding-top: 50px;
+  &_dop {
+    padding-top: 100px;
+    @media (max-width: 991.98px) {
+      padding-top: 50px;
+    }
+  }
 }
 .item_benefit {
   margin-bottom: 48px;
@@ -276,7 +282,7 @@
   border-radius: 5px;
   transition: 0.3s;
 }
-.active {
+.switch-btn.active {
   background: var(--RED-GRAD-2, radial-gradient(141.31% 243.37% at 87.11% -71.74%, #F57E35 0%, #F44336 100%));
   color: white;
 }
